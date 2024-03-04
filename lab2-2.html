@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <style>
+      form{width: fit-content;}
+    </style>
+</head>
+<body>
+    
+    <form action="" >
+        <fieldset>
+        <legend>Στοιχεία φοιτητή</legend>
+        <em>Συμπληρώστε τα στοιχεία σας με ελληνικούς χαρακτήρες</em>
+        <br><br>
+        <div class="label-group">
+            <label for="name">Ονοματεπόνωμο</label>
+        </div>
+        <div class="input-group1">
+            <input type="text" id="name" name="name" placeholder="Όνομα" required>
+            <input type="text" id="surname" name="surname" placeholder="Επώνυμο" required>
+        </div>
+        <br>
+        
+        <div class="label-group2">
+            <label for="name">Στοιχεία διεύθυνσης</label>
+        </div>
+        <div class="input-group">
+            <input type="text" id="odos" name="odos" size="46" placeholder="Οδός και αριθμός" required>
+            <br><br>
+            <input type="text" id="poli" name="poli" placeholder="Πόλη" required>
+            <input type="text" id="post_code" name="post_code" placeholder="Ταχυδρομικός κώδικας" required>
+
+        </div>
+        <br>
+        
+        <div class="label-group">
+            <label for="name">Στοιχεία επικοινωνίας</label>
+        </div>
+        <div class="input-group">
+            <input type="tel" id="phone" name="phone" placeholder="Τηλέφωνο" required>
+            <input type="email" id="email" name="email" placeholder="Διεύθυνση email" required>
+        </div>
+        <br>
+        
+        <label class="radio-circle1">
+            Έτος σπουδών
+            <input type="radio" id="A" name="user" value="A">
+            </label for="A">A </label>
+            <input type="radio" id="B" name="user" value="B">
+            </label for="B">Β </label>
+            <input type="radio" id="C" name="user" value="C">
+            </label for="C">Γ </label>
+            <input type="radio" id="D" name="user" value="D">
+            </label for="D">Δ </label>
+            <input type="radio" id="E" name="user" value="E">
+            </label for="E">Ε </label>
+        </label>
+        <br><br>
+       
+        
+        <label for="integer">Αριθμός μητρώου</label><br>
+        <input type="number" id="integer" name="integer" placeholder="1050505"><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Επιλέξτε πιστοποιητικό και τρόπο παραλαβής</legend>
+        <label for="credit">Είδος ποιστοποιητικού</label>
+        <br>
+        <select id="credit" name="credit">
+            <option>Φωτοτυπία καρτέρλας</option>
+            <option>Βεβαίωση φοίτησης</option>
+            <option>Φοιτητή ταυτότητα</option>
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Παραλαβή πιστοποιητικού</legend>
+        <input type="radio" id="grammateia" name="radio" value="grammateia">Παραλαβή από την γραμματεία
+        <br>
+        <input type="radio" id="home" name="radio" value="home"> Αποστολή στην διεύθυνση οικίας
+        <br><br>
+        <label for="date">Ημερομηνία παραλαβής</label><br>
+        <input type="date" id="date" name="date">
+        
+    </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
